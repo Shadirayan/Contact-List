@@ -1,13 +1,13 @@
-import React from 'react';
-import Header from "./components/header/header"
-import "./app.css"
+import React from "react";
+import Header from "./components/header/header";
+import "./app.css";
+import CardContainer from "./containers/cardContainer";
 const App = () => {
   return (
-  < >
- <Header/>
-  
-  </>
-
+    <>
+      <Header />
+      <CardContainer />
+    </>
   );
 };
 
