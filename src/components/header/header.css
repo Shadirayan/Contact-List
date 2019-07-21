@@ -4,27 +4,33 @@ padding: 0;
 }
 .nav-container {
 position: relative;
-height: 11vh;
+height: 9vh;
 background-color:#20B8EA;
 }
 .nav{
-position: fixed;
-z-index: 100;
-width: 100%;
-display: flex;
-justify-content: space-around;
-align-items: center;
-height: 11vh;
-}
+    color:white;
+    font-size:28px;
+    font-weight: bold;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 9vh;
+    }
 .input-style {
     box-sizing: border-box;
     border: 2px solid #ccc;
-    width:40%;
+    width:30%;
+    margin-left:20%;
+    height:5vh;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 20px;
     background-color: white;
     background-image: url('https://www.w3schools.com/css/searchicon.png');
-    background-position: 6px 6px; 
+    background-position: 24px 16px; 
     background-repeat: no-repeat;
-    padding: 7px 16px 8px 35px;
+    padding: 7px 16px 8px 55px;
+    
   }
