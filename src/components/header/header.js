@@ -7,7 +7,7 @@ export class Header extends React.Component {
           <div>
         <div className="nav-container">
          <div className="nav">
-           <p>Hi</p>
+           <p>Contact List</p>
            <input type="text" name="search" className="input-style" placeholder="Search.."/>
          </div>
           </div>
@@ -15,3 +15,4 @@ export class Header extends React.Component {
       );
     }
   }
+  export default Header;
