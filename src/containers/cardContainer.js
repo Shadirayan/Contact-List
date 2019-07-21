@@ -9,18 +9,31 @@ export default class CardContainer extends React.Component {
   componentDidMount() {
     fetch("http://private-05627-frontendnewhire.apiary-mock.com/contact_list")
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => this.setState({ data }))
       .catch(rejected => {
         console.log(rejected);
       });
-    console.log(this.state);
   }
 
   render() {
-    return <div />;
+    console.log("hi", this.state.data.length);
+    let dataToRender = [];
+
+    if (this.state.data.length)
+      this.state.data.map(cb => {
+        dataToRender.push(
+          <ContactCard
+            src={cb.profile_image}
+            name={cb.name}
+            driverType={cb.driverType}
+            phone={cb.phone}
+            email={cb.email}
+          />
+        );
+      });
+
+    if (this.state.data.length)
+      return <div className="contact-card-container">{dataToRender}</div>;
+    else return "hi";
   }
 }
-// if (this.state.data.length > 0) {
-//   return this.state.data.map(cb => {
-//     return <ContactCard email={this.state.data.email} />;
-//   });

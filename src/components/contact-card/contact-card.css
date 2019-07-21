@@ -1,5 +1,5 @@
 .contact-card {
-  width: 90%;
+  width: 100%;
   border: 1px solid #d3d3d3;
   border-radius: 0.25rem;
   margin-left: 5%;
@@ -8,6 +8,8 @@
 .bg-img {
   min-height: 180px;
   width: 90%;
+  height: 300px;
+  width: 200px;
   margin: 0 auto;
   margin-top: 2%;
   margin-left: 5%;
