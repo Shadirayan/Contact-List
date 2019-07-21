@@ -1,0 +1,5 @@
+.contact-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  margin-bottom: 10%;
+}

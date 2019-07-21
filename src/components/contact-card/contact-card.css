@@ -1,0 +1,38 @@
+.contact-card {
+  width: 90%;
+  border: 1px solid #d3d3d3;
+  border-radius: 0.25rem;
+  margin-left: 5%;
+  background-color: white;
+}
+.bg-img {
+  min-height: 180px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.driver-info {
+  padding: 15px;
+  margin-top: -15%;
+}
+
+.driver-type {
+  display: block;
+  margin: 0 10%;
+  width: 58px;
+  height: 58px;
+  background: #999;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translateY(-60%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+.showme {
+  display: none;
+}
+
+.showhim:hover .showme {
+  display: block;
+}
