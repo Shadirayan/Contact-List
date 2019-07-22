@@ -2,39 +2,59 @@
   width: 100%;
   border: 1px solid #d3d3d3;
   border-radius: 0.25rem;
-  margin-left: 5%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   background-color: white;
 }
 .bg-img {
-  min-height: 180px;
-  width: 90%;
-  height: 300px;
-  width: 200px;
+  display: block;
   margin: 0 auto;
-  margin-top: 2%;
-  margin-left: 5%;
+  height: 100%;
+  width: 100%;
+  transition: margin 1.5s ease;
+  object-position: 50% 50%;
 }
 
 .driver-info {
-  padding: 15px;
-  margin-top: -15%;
+  transition: margin-top 1s ease;
+}
+
+.bg-img:hover {
+  margin: -11.875% 0;
+}
+
+.trans:hover ~ .driver-info,
+.trans:hover + .driver-type {
+  margin-top: -25px;
+}
+
+.trans {
+  margin-top: 5%;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 
 .driver-type {
   display: block;
+  transition: margin-top 0.7s ease;
   margin: 0 10%;
   width: 58px;
   height: 58px;
-  background: #999;
   border-radius: 50%;
   overflow: hidden;
   transform: translateY(-60%);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 .showme {
-  display: none;
+  opacity: 0;
+  word-break: break-all;
 }
 
 .showhim:hover .showme {
-  display: block;
+  opacity: 1;
 }

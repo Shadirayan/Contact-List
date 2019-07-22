@@ -2,6 +2,12 @@ import React from "react";
 import "./header.css";
 
 export class Header extends React.Component {
+  filterDrivers(value) {
+    let filteredArray = this.props.data.filter(obj => obj.name.includes(value));
+    this.props.func(filteredArray);
+  }
+  componentDidMount() {}
+
   render() {
     return (
       <div>
@@ -13,6 +19,7 @@ export class Header extends React.Component {
               name="search"
               className="input-style"
               placeholder="Search.."
+              onChange={({ target }) => this.filterDrivers(target.value)}
             />
           </div>
         </div>
