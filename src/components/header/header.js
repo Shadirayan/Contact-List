@@ -3,17 +3,18 @@ import "./header.css";
 
 export class Header extends React.Component {
   filterDrivers(value) {
-    let filteredArray = this.props.data.filter(obj => obj.name.includes(value));
+    let filteredArray = this.props.nonFilterdData.filter(obj =>
+      obj.name.includes(value)
+    );
     this.props.func(filteredArray);
   }
-  componentDidMount() {}
 
   render() {
     return (
       <div>
         <div className="nav-container">
           <div className="nav">
-            <p>Contact List</p>
+            <p className="header-title">Contact List</p>
             <input
               type="text"
               name="search"

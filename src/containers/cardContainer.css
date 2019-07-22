@@ -1,12 +1,32 @@
 .contact-card-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
   width: 60%;
   margin-top: 2%;
   display: grid;
   justify-content: center;
   margin-left: 60%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   margin-left: 200px;
   margin-right: 200px;
   margin-bottom: 10%;
   grid-gap: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .contact-card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .contact-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .contact-card-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
 }

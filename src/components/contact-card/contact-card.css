@@ -11,7 +11,7 @@
   display: block;
   margin: 0 auto;
   height: 100%;
-  width: 100%;
+  width: 90%;
   transition: margin 1.5s ease;
   object-position: 50% 50%;
 }
@@ -50,11 +50,11 @@
   transform: translateY(-60%);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
-.showme {
+.showNormalInfo {
   opacity: 0;
   word-break: break-all;
 }
 
-.showhim:hover .showme {
+.showDetailedInfo:hover .showNormalInfo {
   opacity: 1;
 }
