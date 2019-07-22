@@ -4,11 +4,20 @@ import "./contact-card.css";
 export default class ContactCard extends React.Component {
   render() {
     return (
-      <div className="contact-card showhim">
+      <div className="contact-card showDetailedInfo">
         <div className="trans">
-          <img className="bg-img" src={this.props.src} alt="driver" />
+          <img
+            className="bg-img"
+            src={
+              this.props.src === "" || this.props.src === undefined
+                ? `http://saltlifetherapy.ie/wp-content/uploads/2018/11/no-photo-1.png`
+                : `${this.props.src}`
+            }
+            alt="driver"
+          />
         </div>
         <img
+          alt="driver-type"
           src={
             this.props.driverType.toLowerCase().includes("professional")
               ? "https://sendeyo.com/up/d/861df6a29e"
@@ -19,7 +28,7 @@ export default class ContactCard extends React.Component {
         <div className="driver-info">
           <h4>{this.props.name}</h4>
           <p>{this.props.driverType} Driver</p>
-          <div className="showme">
+          <div className="showNormalInfo">
             <p>Phone Number: {this.props.phone}</p>
             <p>email:{this.props.email}</p>
           </div>

@@ -5,14 +5,16 @@ body {
 .nav-container {
   position: relative;
   height: 9vh;
+  width: 100%;
   background-color: #20b8ea;
+}
+.header-title {
+  font-size: 22px;
 }
 .nav {
   color: white;
-  font-size: 28px;
   font-weight: bold;
   position: relative;
-  z-index: 100;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -32,4 +34,34 @@ body {
   background-position: 20px 8px;
   background-repeat: no-repeat;
   padding: 7px 16px 8px 55px;
+}
+
+@media only screen and (max-width: 600px) {
+  .input-style {
+    width: 50%;
+    font-size: 12px;
+
+    background-position: 20px 4px;
+  }
+  .header-title {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .input-style {
+    width: 50%;
+    background-position: 20px 4px;
+  }
+  .header-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .input-style {
+    width: 40%;
+    background-position: 20px 4px;
+  }
+  .header-title {
+    font-size: 24px;
+  }
 }

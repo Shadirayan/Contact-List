@@ -9,7 +9,7 @@ export default class App extends React.Component {
   componentDidMount() {
     fetch("http://private-05627-frontendnewhire.apiary-mock.com/contact_list")
       .then(res => res.json())
-      .then(data => this.setState({ data }))
+      .then(data => this.setState({ data: data, nonFiltered: data }))
       .catch(rejected => {
         console.log(rejected);
       });
@@ -17,7 +17,10 @@ export default class App extends React.Component {
   render() {
     return (
       <>
-        <Header data={this.state.data} func={data => this.setState(data)} />
+        <Header
+          nonFilterdData={this.state.nonFiltered}
+          func={data => this.setState({ data })}
+        />
         <CardContainer data={this.state.data} />
       </>
     );

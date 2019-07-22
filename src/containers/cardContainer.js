@@ -10,6 +10,7 @@ export default class CardContainer extends React.Component {
       this.props.data.map(cb => {
         dataToRender.push(
           <ContactCard
+            key={cb.name}
             src={cb.profile_image}
             name={cb.name}
             driverType={cb.driverType}
@@ -21,6 +22,6 @@ export default class CardContainer extends React.Component {
 
     if (this.props.data.length)
       return <div className="contact-card-container">{dataToRender}</div>;
-    else return "Fetching Data";
+    else return "Fetching Data / No Data Found";
   }
 }
