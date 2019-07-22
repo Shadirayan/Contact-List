@@ -21,7 +21,7 @@
 }
 
 .bg-img:hover {
-  margin: -11.875% 0;
+  margin-top: -11.875%;
 }
 
 .trans:hover ~ .driver-info,
