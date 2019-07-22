@@ -1,7 +1,12 @@
 .contact-card-container {
-  width: 70%;
-  margin-top: 3%;
+  width: 60%;
+  margin-top: 2%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin-left: 60%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 200px;
+  margin-right: 200px;
   margin-bottom: 10%;
+  grid-gap: 20px;
 }
